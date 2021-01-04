@@ -15,7 +15,7 @@ install:
 # Run the pytest test
 script:
   - pytest --cov=./ --cov-report=xml
-  - bash <(curl https://codecov.io/bash)
+  - bash <(curl https://codecov.io/bash) -t 824dd530-c5ff-4732-a1db-50fa0d8085cb
 
 # Push the results back to codecov
 after_success:
