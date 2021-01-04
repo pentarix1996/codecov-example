@@ -1,5 +1,5 @@
 import pytest
-from methods import main
+from methods import tested
 
 
 @pytest.fixture
@@ -8,8 +8,8 @@ def name() -> str:
 
 
 def test_greet(name) -> None:
-    assert main.greet(name) == "Hello Antonio"
+    assert tested.greet(name) == "Hello Antonio"
 
 
 def test_hello() -> None:
-    assert main.sayHello() == "Hello world!"
+    assert tested.sayHello() == "Hello world!"
