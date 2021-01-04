@@ -1,1 +1,1 @@
-# codecovExample
+# codecov example
