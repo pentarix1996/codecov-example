@@ -1,5 +1,5 @@
 import pytest
-from methods import tested
+from methods import no_tested, tested
 
 
 @pytest.fixture
@@ -13,3 +13,7 @@ def test_greet(name) -> None:
 
 def test_hello() -> None:
     assert tested.sayHello() == "Hello world!"
+
+
+def noTestedSayHello() -> None:
+    assert no_tested.sayHello() == "Hello world!"
